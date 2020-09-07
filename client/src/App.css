@@ -24,7 +24,9 @@
 .sidebar-header-right,
 .sidebar-search,
 .sidebar-search-container,
-.sidebar-chat {
+.sidebar-chat,
+.chat-header,
+.chat-footer {
   display: flex;
   align-items: center;
 }
@@ -88,7 +90,7 @@
 .sidebar-charts {
   flex: 1;
   background-color: white;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .sidebar-chat {
@@ -124,5 +126,96 @@
 .chat {
   flex: 0.65;
 }
+
+/*-----------Chat Header------------------- */
+.chat-header {
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.chat-header-info {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat-header-info > h3 {
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.chat-header-info > p {
+  color: gray;
+}
+/*------------End of chat header------------------ */
+
+/*-------------------Chat body--------------- */
+.chat-body {
+  flex: 1;
+  background: url("./images/whatsapp-background.png") center/cover repeat;
+  overflow-y: scroll;
+  padding: 2rem 1rem;
+}
+
+.chat-content {
+  position: relative;
+  font-size: 1rem;
+  padding: 0.63rem;
+  width: fit-content;
+  border-radius: 0.63rem;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.chat-receiver {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+
+.chat-timestamp {
+  margin-left: 0.63rem;
+  font-size: 0.7rem;
+}
+
+.chat-name {
+  position: absolute;
+  top: -1.2rem;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+/*-----------------End of chat body------------- */
+
+/*----------------chat footer----------------- */
+.chat-footer {
+  justify-content: space-between;
+  height: 3.8rem;
+  border-top: 1px solid lightgray;
+}
+
+.chat-footer > form {
+  flex: 1;
+  display: flex;
+}
+
+.chat-footer > form > input {
+  flex: 1;
+  border-radius: 1.5rem;
+  padding: 0.63rem;
+  border: none;
+  outline-width: 0;
+}
+
+.chat-footer > form > button {
+  display: none;
+}
+
+.chat-footer > .MuiSvgIcon-root {
+  padding: 0.63rem;
+  color: gray;
+  cursor: pointer;
+  font-size: 2.8rem;
+}
+
+/*------------------End of chat footer-------------- */
 
 /*-----------------End of chat room css-------------------*/
