@@ -1,0 +1,128 @@
+/*---------------Globals---------------*/
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #dadbd3;
+}
+
+.app-body {
+  display: flex;
+  background-color: #ededed;
+  margin-top: -30px;
+  height: 90vh;
+  width: 90vw;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.sidebar,
+.chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header-right,
+.sidebar-search,
+.sidebar-search-container,
+.sidebar-chat {
+  display: flex;
+  align-items: center;
+}
+
+/*-------------End of Globals------------*/
+
+/*--------------Sidebar css------------*/
+.sidebar {
+  flex: 0.35;
+}
+
+/*--------sidebar header------------- */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 1px solid lightgray;
+}
+
+.sidebar-header-right {
+  justify-content: space-between;
+  min-width: 10vw;
+}
+
+.sidebar-header-right .MuiSvgIcon-root {
+  margin-right: 0.4rem;
+  font-size: 24px !important;
+}
+/*---------end of sidebar header--------- */
+
+/*-----------sidebar search------------- */
+.sidebar-search {
+  background-color: #f6f6f6;
+  height: 2.44rem;
+  padding: 5px;
+}
+
+.sidebar-search-container {
+  background-color: white;
+  width: 100%;
+  height: 2.19rem;
+  border-radius: 1.25rem;
+}
+
+.sidebar-search-container .MuiSvgIcon-root {
+  color: gray;
+  padding: 10px;
+  padding-right: 2px;
+  font-size: 2.8rem;
+}
+
+.sidebar-search-container > input {
+  border: none;
+  outline-width: 0;
+  margin-left: 0.2rem;
+  padding: 10px 0;
+}
+/*-------------end of sidebar search---------------*/
+
+/*-------------sidebar chats------------------------*/
+.sidebar-charts {
+  flex: 1;
+  background-color: white;
+  overflow: scroll;
+}
+
+.sidebar-chat {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f6f6f6;
+}
+.sidebar-chat:hover {
+  background-color: #ebebeb;
+}
+
+.sidebar-chat-info {
+  margin-left: 1rem;
+}
+.sidebar-chat-info > h2 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.sidebar-chat-info > p {
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  white-space: pre-line;
+}
+
+/*-----------------End of sidebar chats---------------*/
+
+/*------------------End of sidebar-----------------------*/
+
+/*--------------------Chat room css---------------------*/
+.chat {
+  flex: 0.65;
+}
+
+/*-----------------End of chat room css-------------------*/
